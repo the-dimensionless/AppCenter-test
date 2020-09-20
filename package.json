@@ -6,7 +6,8 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "codepush-android": "appcenter codepush release-react -a the_dimensionless/simple-test -d Staging -m true"
   },
   "dependencies": {
     "expo": "~38.0.9",

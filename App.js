@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert } from 'react-native';
 import withCodePush from './codepush';
@@ -6,9 +5,10 @@ import withCodePush from './codepush';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Final inte test !</Text>
-      <Button title='Click Me' onPress={() => Alert.alert('DevOps is exhausting!')} />
-      <StatusBar style="auto" />
+      <Text style={styles.text}>Terrible !</Text>
+      <View>
+        <Button title='Click Me' onPress={() => Alert.alert('DevOps is exhausting!')} />
+      </View>
     </View>
   );
 }
@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    fontSize: 24
+  }
 });
 
 export default withCodePush(App);
