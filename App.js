@@ -6,8 +6,8 @@ import withCodePush from './codepush';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Final Change !</Text>
-      <Button title='Click Me' onPress={() => Alert.alert('DevOps is really exhausting!')} />
+      <Text style={styles.text}>Test For Codepush !</Text>
+      <Button title='Click Me' onPress={() => Alert.alert('Simply Codepush Works!')} />
       <StatusBar style="auto" />
     </View>
   );
@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    fontSize: 24,
+  }
 });
 
 export default withCodePush(App);
