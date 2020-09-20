@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">simple-test</string>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">VCjmDBMYl5Bt5zjzWvVv-SIgYmyLViMzayV1E</string>
 </resources>

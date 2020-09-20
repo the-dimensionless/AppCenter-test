@@ -1,11 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert } from 'react-native';
+import CodePush from 'react-native-code-push';
 
 export default function App() {
+  useEffect = () => {
+    CodePush.sync({
+      installMode: CodePush.InstallMode.IMMEDIATE
+    }), []
+  }
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Hi There!</Text>
+      <Button title='Click Me' onPress={() => Alert.alert('Howdy Partner!')} />
       <StatusBar style="auto" />
     </View>
   );
