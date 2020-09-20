@@ -6,8 +6,8 @@ import withCodePush from './codepush';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Hi Ronaldo is the best !</Text>
-      <Button title='Click Me' onPress={() => Alert.alert('You are Batman!')} />
+      <Text>Final inte test !</Text>
+      <Button title='Click Me' onPress={() => Alert.alert('DevOps is exhausting!')} />
       <StatusBar style="auto" />
     </View>
   );
